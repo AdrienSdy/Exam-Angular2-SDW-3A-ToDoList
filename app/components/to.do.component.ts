@@ -28,10 +28,23 @@ export class ToDoComponent {
     // Et elle initialise le formulaire d'ajout d'une tâche. 
     ngOnInit(): void {
         this.toDoService.getTasks().then(tasks => this.tasks = tasks);
+        this.resetInput();
     }
 
     // Fonction permettant de spécifier qu'une tâche à été éffectué
     doneTask(task: Task): void {
         this.toDoService.setArchive(task);
+    }
+
+    // Fonction permettant d'ajouter une tâche
+    // Et réinitialise le formulaire d'ajout
+    addTask(task: Task) {
+        this.toDoService.addTask(task);
+        this.resetInput();
+    }
+
+    // Fonction permettant d'initialiser le formulaire d'ajout
+    resetInput(): void {
+        this.newTask = {id: this.toDoService.lengthTasks(), title: '', description: '', archive: false};
     }
  }

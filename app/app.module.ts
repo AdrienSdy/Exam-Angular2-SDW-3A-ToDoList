@@ -14,6 +14,7 @@ import { ToDoComponent }  from './components/to.do.component';
 
 // Import des directives
 import { ToDoDirective } from './directives/to.do.directive';
+import { ToDoAddDirective } from './directives/to.do.add.directive';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { ToDoDirective } from './directives/to.do.directive';
   ],
   declarations: [
     AppComponent, ToDoComponent,
-    ToDoDirective
+    ToDoDirective, ToDoAddDirective
   ],
 
   // Ajout du provider pour les routes dynamiques

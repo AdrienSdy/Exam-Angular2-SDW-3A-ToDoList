@@ -19,4 +19,13 @@ export class ToDoService {
     setArchive(task: Task): void {
         task.archive = true;
     }
+
+// Permet d'ajouter une tâche
+    addTask(data: Task): void {
+        this.TASKS.push(data);
+    }
+
+    lengthTasks() {
+        return this.TASKS.length;
+    }
 }

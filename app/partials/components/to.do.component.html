@@ -5,4 +5,8 @@
             <to-do [task]="task" (sendDoneTask)="doneTask($event)"></to-do>       
         </section>
     </template>
+    <section>
+        <!-- Appel de la directive pour ajouter une tâche -->
+        <to-do-add [newTask]="newTask" (sendAddTask)="addTask($event)"></to-do-add>
+    </section>
 </main>
