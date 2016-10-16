@@ -15,6 +15,7 @@ import { ToDoArchiveComponent }  from './components/to.do.archive.component';
 
 // Import des directives
 import { AppNavigationDirective } from './directives/app.navigation.directive';
+import { AppFooterDirective } from './directives/app.footer.directive';
 import { ToDoDirective } from './directives/to.do.directive';
 import { ToDoAddDirective } from './directives/to.do.add.directive';
 import { ToDoArchiveDirective } from './directives/to.do.archive.directive';
@@ -25,7 +26,7 @@ import { ToDoArchiveDirective } from './directives/to.do.archive.directive';
   ],
   declarations: [
     AppComponent, ToDoComponent, ToDoArchiveComponent,
-    AppNavigationDirective, ToDoDirective, ToDoAddDirective, ToDoArchiveDirective
+    AppNavigationDirective, AppFooterDirective, ToDoDirective, ToDoAddDirective, ToDoArchiveDirective
   ],
 
   // Ajout du provider pour les routes dynamiques

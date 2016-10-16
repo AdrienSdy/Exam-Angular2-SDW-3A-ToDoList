@@ -34,4 +34,20 @@ export class ToDoService {
         var index = TASKS.indexOf(task);
         TASKS.splice(index, 1);
     }
+
+// Retorune le compte des tâches à réaliser et celles effectués
+    getCount(): any{
+        var done_count: number;
+        var todo_count: number;
+        done_count = 0;
+        todo_count = 0;
+        for (var index = 0; index < TASKS.length; index++) {
+            if (TASKS[index]['archive']) {
+                done_count++;
+            } else {
+                todo_count++;
+            }
+        }
+        return {'todo_count':todo_count, 'done_count':done_count};
+    }  
 }
