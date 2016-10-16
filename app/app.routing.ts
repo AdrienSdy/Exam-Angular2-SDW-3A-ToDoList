@@ -15,7 +15,7 @@ const appRoutes: Routes=[
     {
         path: 'accueil',
         component: ToDoComponent
-    },
+    }
 ]
 
 // Export de la class du module de routing

@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
     templateUrl: 'app/partials/app.component.html'
 })
 export class AppComponent {
-    title = 'ToDo List'
 }

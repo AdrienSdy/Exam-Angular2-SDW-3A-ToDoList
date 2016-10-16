@@ -13,6 +13,7 @@ import { AppComponent }  from './app.component';
 import { ToDoComponent }  from './components/to.do.component';
 
 // Import des directives
+import { AppNavigationDirective } from './directives/app.navigation.directive';
 import { ToDoDirective } from './directives/to.do.directive';
 import { ToDoAddDirective } from './directives/to.do.add.directive';
 
@@ -22,7 +23,7 @@ import { ToDoAddDirective } from './directives/to.do.add.directive';
   ],
   declarations: [
     AppComponent, ToDoComponent,
-    ToDoDirective, ToDoAddDirective
+    AppNavigationDirective, ToDoDirective, ToDoAddDirective
   ],
 
   // Ajout du provider pour les routes dynamiques
