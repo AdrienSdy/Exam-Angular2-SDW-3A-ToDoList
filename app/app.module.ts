@@ -17,6 +17,7 @@ import { ToDoArchiveComponent }  from './components/to.do.archive.component';
 import { AppNavigationDirective } from './directives/app.navigation.directive';
 import { ToDoDirective } from './directives/to.do.directive';
 import { ToDoAddDirective } from './directives/to.do.add.directive';
+import { ToDoArchiveDirective } from './directives/to.do.archive.directive';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { ToDoAddDirective } from './directives/to.do.add.directive';
   ],
   declarations: [
     AppComponent, ToDoComponent, ToDoArchiveComponent,
-    AppNavigationDirective, ToDoDirective, ToDoAddDirective
+    AppNavigationDirective, ToDoDirective, ToDoAddDirective, ToDoArchiveDirective
   ],
 
   // Ajout du provider pour les routes dynamiques
