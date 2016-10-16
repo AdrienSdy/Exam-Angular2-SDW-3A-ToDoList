@@ -11,6 +11,7 @@ import { ToDoService } from './services/to.do.service';
 // Import des componsants
 import { AppComponent }  from './app.component';
 import { ToDoComponent }  from './components/to.do.component';
+import { ToDoArchiveComponent }  from './components/to.do.archive.component';
 
 // Import des directives
 import { AppNavigationDirective } from './directives/app.navigation.directive';
@@ -22,7 +23,7 @@ import { ToDoAddDirective } from './directives/to.do.add.directive';
     BrowserModule, FormsModule, Router
   ],
   declarations: [
-    AppComponent, ToDoComponent,
+    AppComponent, ToDoComponent, ToDoArchiveComponent,
     AppNavigationDirective, ToDoDirective, ToDoAddDirective
   ],
 
