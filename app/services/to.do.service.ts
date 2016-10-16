@@ -28,4 +28,10 @@ export class ToDoService {
     lengthTasks() {
         return this.TASKS.length;
     }
+    
+// Permet de supprimer une tâche
+    delete(task: Task){
+        var index = TASKS.indexOf(task);
+        TASKS.splice(index, 1);
+    }
 }

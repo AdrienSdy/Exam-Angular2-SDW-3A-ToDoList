@@ -24,4 +24,9 @@ export class ToDoArchiveComponent {
     ngOnInit(): void {
         this.toDoService.getTasks().then(tasks => this.tasks = tasks);
     }
+
+    // Fonction permettant de supprimer définitivement une tâche
+    delete(task: Task): void {
+        this.toDoService.delete(task);
+    }
  }
