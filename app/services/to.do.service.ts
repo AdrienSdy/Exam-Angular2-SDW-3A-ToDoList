@@ -14,4 +14,9 @@ export class ToDoService {
     getTasks(): Promise<Task[]> {
         return Promise.resolve(TASKS);
     }
+    
+// Permet de mettre à jour une tâche en la plaçant en archivé
+    setArchive(task: Task): void {
+        task.archive = true;
+    }
 }

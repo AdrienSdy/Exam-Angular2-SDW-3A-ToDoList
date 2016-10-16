@@ -29,4 +29,9 @@ export class ToDoComponent {
     ngOnInit(): void {
         this.toDoService.getTasks().then(tasks => this.tasks = tasks);
     }
+
+    // Fonction permettant de spécifier qu'une tâche à été éffectué
+    doneTask(task: Task): void {
+        this.toDoService.setArchive(task);
+    }
  }
