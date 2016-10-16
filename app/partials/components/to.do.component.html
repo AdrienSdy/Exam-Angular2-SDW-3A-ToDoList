@@ -1,0 +1,8 @@
+<main>
+    <template ngFor let-task [ngForOf]="tasks">
+        <!-- Affichange conditionnel pour avoir que les tâches à faire -->
+        <section *ngIf="task.archive == false">
+            <to-do [task]="task"></to-do>       
+        </section>
+    </template>
+</main>
